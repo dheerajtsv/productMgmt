@@ -1,6 +1,8 @@
 from fastapi.testclient import TestClient
 from api import app
+import os
 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 client = TestClient(app)
 
 def test_invalid_login():
