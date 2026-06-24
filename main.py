@@ -56,7 +56,7 @@ def get_coordinates(city):
         return [location.latitude, location.longitude]
     return None
 
-url = "http://127.0.0.1:8000"
+url = "https://productmgmt.onrender.com"
 cookie_manager = stx.CookieManager()
 token = cookie_manager.get('token')
 
